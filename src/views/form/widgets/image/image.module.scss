@@ -1,0 +1,39 @@
+.image {
+  width: 140px;
+  min-height: auto;
+
+  &.editable {
+    width: fit-content;
+    height: calc(4rem + 2px);
+  }
+
+  img {
+    width: inherit;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  &:hover .actions {
+    opacity: 1;
+  }
+}
+
+.actions {
+  position: absolute;
+  left: calc(50% - 32px);
+  bottom: 12px;
+  opacity: 0;
+  padding: 2px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  background: var(--bs-body-bg);
+  [dir="rtl"] & {
+    left: unset;
+    right: calc(50% - 32px);
+  }
+}
+
+.invalid {
+  border: var(--bs-input-invalid-border, 1px solid var(--bs-danger)) !important;
+}

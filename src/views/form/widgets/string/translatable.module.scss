@@ -1,0 +1,27 @@
+.container {
+  position: absolute;
+  right: 0.25rem;
+  cursor: pointer;
+}
+
+.top {
+  top: 0.25rem;
+}
+
+.bottom {
+  bottom: 0rem;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.list > div {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem !important;
+  }
+}

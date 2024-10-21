@@ -1,0 +1,22 @@
+.container {
+  --ax-panel-body-padding: 0;
+  --ax-panel-header-border: 0;
+  &.toolbar {
+    --ax-panel-header-title-padding: 0 0.5rem;
+  }
+}
+
+.grid {
+  height: 100%;
+  overflow: unset;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.titleText {
+  display: flex;
+  flex: 1;
+}
